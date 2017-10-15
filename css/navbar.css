@@ -2,7 +2,8 @@
 
 nav.navbar {
     background: none;
-    transition: all .5s
+    transition: all .5s;
+    border: none;
 }
 
 .navbar-default .navbar-brand {

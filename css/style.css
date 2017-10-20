@@ -9,11 +9,11 @@ body {
 .no-left-padding {
   padding-left: 0 !important;
 }
+
 section.hero {
   min-height: 100vh;
   content: "";
   width: 100%;
-  z-index: -1000;
   background: linear-gradient(160deg,#02ccba,#aa7ecd);
   -webkit-transform-origin: left bottom;
   transform-origin: left bottom;
@@ -106,4 +106,52 @@ i.icon-social-react::before {
 i.icon-social-gulp::before {
   content: url(../img/gulp-42.svg);
   margin-left:18px;
+}
+
+.header-content {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+}
+.header-content h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-button {
+  margin-top: 20px;
+}
+.header-image {
+  text-align: center;
+}
+.btn-sharp {
+  width: 20rem;
+  box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+  background-color: #0bff26eb;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.btn-sharp:hover {
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  color: #fff;
+}
+
+.hero .container-fluid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  section.hero {
+      font-size: 12px;
+      min-height: 600px;
+      height: auto;
+  }
 }
